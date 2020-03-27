@@ -10,7 +10,7 @@
         background:cornsilk;
     }
     body{
-        background-color:darkcyan;
+        background-color:white;
         width:100%;
         max-width:640px;
         margin:0 auto;  /*让所有内容居中 0是margin-top和buttom的0 auto自动*/
@@ -25,11 +25,56 @@
     .qui-header{
         background-color: #2bab79;
     }
+
+    .plcRouteList{
+        /*border:1px solid red;*/  /*做辅助线，显示盒子模型的边框*/
+        margin-left: 5px;
+        /*float: right;*/
+    }
+
+    .pic{
+        border-radius: 50%; /*图片从方形变成圆形*/
+    }
+    .bottom{
+        /*border:1px solid red;*/
+        position:absolute; /*绝对定位*/
+        top:420px;         /*做个div块把头像和标题放进去*/
+        left:450px;
+    }
+
+    .face{
+        float:left;
+        border:1px solid white; /*头像的白边框*/
+        width:39px;
+        height:39px;
+        border-radius: 50%;
+    }
+    
+    .title{
+       /*border:1px solid red;*/
+       color:white;
+       white-space:nowrap;
+       font-size: 18px;
+       font-weight:bolder;
+       line-height: 40px;
+       margin-left: 70px
+    }
 </style>
 <body>
     <header class="qui-header">
         <h1>国内旅游计划</h1>
     </header>
-    <a herf=""><img src="华东.jpg" width="640"></a>
+
+    <section class="plcRouteList">
+        <a herf=""><img src="fengjing.jpg" width="635"></a>
+        <div class="bottom">
+            <p class="face">       
+                <img src="touxiang.jpg" width="38" height="38" class="pic">
+            </p>
+            <h2 class="title">我的旅游行程</h2>
+        </div>
+        
+    </section>
+    
 </body>
 </html>
